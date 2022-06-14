@@ -16,8 +16,8 @@ namespace CalculadoraMetalSoft
             "2 - Subtração",
             "3 - Divisão",
             "4 - Multiplicação",
-            "5 - Raiz Quadrada",
-            "6 - Porcentagem"
+            "5 - Porcentagem",
+            "6 - Raiz Quadrada"
 
         };
 
@@ -30,6 +30,16 @@ namespace CalculadoraMetalSoft
 
         }
 
+        public int Count()
+        {
+            int count = 0;  
+            foreach(var r in opcao)
+            {
+                count++;
+                
+            }
+            return count;
+        }
 
 
     }
