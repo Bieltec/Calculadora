@@ -1,6 +1,6 @@
 ﻿public class Multiplicacao
 {
-   public List<double> ListMulti { get; set; }
+   public List<double> ListMulti { get; private set; }
 
    public Multiplicacao(List<double> listMulti)
     {

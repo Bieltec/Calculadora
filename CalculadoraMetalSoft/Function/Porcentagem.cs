@@ -1,7 +1,7 @@
 ﻿internal class Porcentagem
 {
-    public double valorA { get; set; }
-    public double valorB { get; set; }
+    public double valorA { get; private set; }
+    public double valorB { get; private set; }
 
     public Porcentagem(double a, double b)
     {

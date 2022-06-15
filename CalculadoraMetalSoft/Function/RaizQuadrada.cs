@@ -1,6 +1,6 @@
 ﻿internal class RaizQuadrada
 {
-    public double raiz { get; set; }
+    public double raiz { get; private set; }
     public RaizQuadrada(double raiz)
     {
         this.raiz = raiz;

@@ -5,6 +5,7 @@ using CalculadoraMetalSoft.Funcao;
 //gostaria de fazer um keypress no outWhile caso queira ficar aperte enter para sair aperte esc
 // clean code para os nomes da function, estudar e verificar
 // estudar function lambda
+// sets privados porém poderia estar lancado a excessao no construtor
 
 
 Console.WriteLine("Calculadora MetalSoft. Seja Bem Vindo!");
