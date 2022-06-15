@@ -17,6 +17,7 @@ var showList = new Calculadora();
 
 showList.obterLista();
 int positionFunction;
+// chamada da lista com as opções de function
 try
 {
     Console.WriteLine("Digite o número da função que deseja:");
@@ -34,7 +35,7 @@ catch (FormatException)
     Console.WriteLine("O valor da função inserida é null ou inválido.");
     throw;
 }
-
+// responsavel por executar cada positionFunction, de acordo com que o usuario precisa
 try
 {
     switch (positionFunction)
@@ -164,30 +165,5 @@ catch (FormatException)
     throw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-//switch (calculadora)
-//{
-//    default:
-//        break;
-//}
-
-
-
-
-//var a = new Divisao();
-//var b = new Soma();
-//var c = new Multiplicacao();
-//var d = new RaizQuadrada(); 
-//var e = new Porcentagem();
 
 

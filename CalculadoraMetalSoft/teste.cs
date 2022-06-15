@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraMetalSoft
 {
+    // classe para aplicação de testes, antes de ir para outras classes.
     public class teste
     {
         public double valor { get; set; }

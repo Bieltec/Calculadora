@@ -1,13 +1,15 @@
 ﻿internal class Divisao
 {
     public List<double> ListDivisao { get; private set; }
-    
 
-    public Divisao(List<double> listDivisao)
-    {
-        ListDivisao = listDivisao;
-    }
 
+	public Divisao(List<double> listDivisao)
+	{
+		ListDivisao = listDivisao;
+	}
+
+
+	// expressao que devo estar estudando para melhor aplicacao
 	public  double TotalDiv()
 	{
 		double aux = 0;
