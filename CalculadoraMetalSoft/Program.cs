@@ -35,28 +35,44 @@ catch (FormatException)
     Console.WriteLine("O valor da função inserida é null ou inválido.");
     throw;
 }
+
 var ValorOperacao = new List<double>();
-int outWhile = 1;
 
-Console.WriteLine("Valor:");
-ValorOperacao.Add(double.Parse(Console.ReadLine()));
 
-Console.WriteLine("Valor:");
-ValorOperacao.Add(double.Parse(Console.ReadLine()));
-
-do
+// responsavel por receber os valores 
+switch (positionFunction)
 {
-    Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
-    outWhile = int.Parse(Console.ReadLine());
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        {          
+            int outWhile = 1;
 
-    if (outWhile == 1)
-    {
-        Console.WriteLine("Valor:");
-        ValorOperacao.Add(double.Parse(Console.ReadLine()));
-    }
+            Console.WriteLine("Valor:");
+            ValorOperacao.Add(double.Parse(Console.ReadLine()));
 
-} while (outWhile == 1);
-// responsavel por executar cada positionFunction, de acordo com que o usuario precisa
+            Console.WriteLine("Valor:");
+            ValorOperacao.Add(double.Parse(Console.ReadLine()));
+
+            do
+            {
+                Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
+                outWhile = int.Parse(Console.ReadLine());
+
+                if (outWhile == 1)
+                {
+                    Console.WriteLine("Valor:");
+                    ValorOperacao.Add(double.Parse(Console.ReadLine()));
+                }
+
+            } while (outWhile == 1);
+
+            break;
+        }    
+}
+
+// responsavel por instanciar as positons function
 try
 {
     switch (positionFunction)
