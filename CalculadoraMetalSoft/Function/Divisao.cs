@@ -1,4 +1,4 @@
-﻿internal class Divisao
+﻿internal sealed class Divisao
 {
     public List<double> ListDivisao { get; private set; }
 
@@ -10,7 +10,7 @@
 
 
 	// expressao que devo estar estudando para melhor aplicacao
-	public  double TotalDiv()
+	public  double TotalDivisao()
 	{
 		double aux = 0;
 		foreach (var item in ListDivisao)

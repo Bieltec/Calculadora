@@ -13,7 +13,7 @@ Console.WriteLine("Calculadora MetalSoft. Seja Bem Vindo!");
 
 Console.WriteLine("Segue as soluções:");
 
-var showList = new Calculadora();
+var showList = new ListaCalculadora();
 
 showList.obterLista();
 int positionFunction;
@@ -35,6 +35,27 @@ catch (FormatException)
     Console.WriteLine("O valor da função inserida é null ou inválido.");
     throw;
 }
+var ValorOperacao = new List<double>();
+int outWhile = 1;
+
+Console.WriteLine("Valor:");
+ValorOperacao.Add(double.Parse(Console.ReadLine()));
+
+Console.WriteLine("Valor:");
+ValorOperacao.Add(double.Parse(Console.ReadLine()));
+
+do
+{
+    Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
+    outWhile = int.Parse(Console.ReadLine());
+
+    if (outWhile == 1)
+    {
+        Console.WriteLine("Valor:");
+        ValorOperacao.Add(double.Parse(Console.ReadLine()));
+    }
+
+} while (outWhile == 1);
 // responsavel por executar cada positionFunction, de acordo com que o usuario precisa
 try
 {
@@ -42,72 +63,38 @@ try
     {
         case 1:
             {
-                var contSoma = new List<double>();
-                int outWhile = 1;
-                do
-                {
-                    Console.WriteLine("Digite o valor:");
-                    /* double valorSoma = Double.Parse(Console.ReadLine());
-                     contSoma.Add(valorSoma);*/
-                    contSoma.Add(double.Parse(Console.ReadLine()));
-                    Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
-                    outWhile = int.Parse(Console.ReadLine());
+       
 
-
-                } while (outWhile == 1);
-
-                var a = new Soma(contSoma);
+                var a = new Soma(ValorOperacao);
                 Console.WriteLine($"O resultado da sua operação: {a.TotalSoma().ToString("N2")}");
                 break;
             }
         case 2:
             {
-                Console.WriteLine("Digite primeiro valor da subtração:");
-                int valor1 = Int32.Parse(Console.ReadLine());
+                
+       
+                var subtracao = new Subtracao(ValorOperacao);
 
-                Console.WriteLine("Digite segundo valor da subtração:");
-                int valor2 = Int32.Parse(Console.ReadLine());
+                Console.WriteLine($"O resultado da sua operação: {subtracao.TotalSubtracao().ToString("N2")}");
 
-                var b = new Subtracao(valor1, valor2);
-                Console.WriteLine("Valor da subtração é: " + b.TotalSub().ToString("N2"));
                 break;
 
             }
         case 3:
             {
-                var contDiv = new List<double>();
-                int outWhile = 1;
-                do
-                {
-                    Console.WriteLine("Digite o valor:");
-                    contDiv.Add(double.Parse(Console.ReadLine()));
-                    Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
-                    outWhile = int.Parse(Console.ReadLine());
-
-                } while (outWhile == 1);
-
-                var divisao = new Divisao(contDiv);
-                Console.WriteLine($"O resultado da sua operação: {divisao.TotalDiv().ToString("N2")}");
+       
+                var divisao = new Divisao(ValorOperacao);
+                Console.WriteLine($"O resultado da sua operação: {divisao.TotalDivisao().ToString("N2")}");
                 break;
 
 
             }
         case 4:
             {
-                var contMulti = new List<double>();
-                int outWhile = 1;
-                do
-                {
-                    Console.WriteLine("Digite o valor:");
-                    contMulti.Add(Double.Parse(Console.ReadLine()));
-                    Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
-                    outWhile = int.Parse(Console.ReadLine());
+      
 
-
-                } while (outWhile == 1);
-
-                var multi = new Multiplicacao(contMulti);
-                Console.WriteLine($"Resultado da operação: {multi.TotalMulti().ToString("N2")}");
+                var multi = new Multiplicacao(ValorOperacao);
+                Console.WriteLine($"Resultado da operação: {multi.TotalMultiplicacao().ToString("N2")}");
                 break;
 
             }
@@ -133,7 +120,7 @@ try
                 }
 
                 var e = new Porcentagem(valor, valor2);
-                Console.WriteLine($"Valor da porcentagem de {valor}% de {valor2} é: " + e.TotalPor().ToString("N2"));
+                Console.WriteLine($"Valor da porcentagem de {valor}% de {valor2} é: " + e.TotalPorcentagem().ToString("N2"));
                 break;
 
             }
@@ -163,7 +150,15 @@ catch (FormatException)
 {
     Console.WriteLine("O valor inserido na operação é null ou inválido.");
     throw;
+
 }
+
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-﻿internal class Porcentagem
+﻿internal sealed class Porcentagem
 {
     public double valorA { get; private set; }
     public double valorB { get; private set; }
@@ -9,7 +9,7 @@
         valorB = b;
     }
 
-    public double TotalPor()
+    public double TotalPorcentagem()
     {
         double total = (valorA * valorB) / 100;
         return total;

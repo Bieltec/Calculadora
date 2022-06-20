@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculadoraMetalSoft
 {
-    internal class Calculadora
+    internal class ListaCalculadora
     {
 
 

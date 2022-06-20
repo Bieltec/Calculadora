@@ -1,4 +1,4 @@
-﻿internal class Soma
+﻿internal sealed class Soma
 {
     public List<double> ListSoma { get; private set; }
     public Soma(List<double> listSoma)

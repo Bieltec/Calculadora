@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace CalculadoraMetalSoft.Funcao
 {
-    internal class Subtracao
+    internal sealed class Subtracao
     {
-        public double valorA { get; private set; }
-        public double valorB { get; private set; }
+        public List<double> ListSubtracao { get; private set; }
 
-        public Subtracao(double valorA, double valorB)
+        public Subtracao(List<double> listSubtracao)
         {
-            this.valorA = valorA;
-            this.valorB = valorB;
+            ListSubtracao = listSubtracao;
         }
 
-        public double TotalSub()
+        public double TotalSubtracao()
         {
-            return valorA - valorB;
+            double auxiliar = 0;
+            foreach (var subtracao in ListSubtracao)
+            {
+                if (subtracao > 0)
+                {
+                    auxiliar = auxiliar == 0 ? subtracao : auxiliar - subtracao;
+                }
+            }
+            return auxiliar;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿internal class RaizQuadrada
+﻿internal sealed class RaizQuadrada
 {
     public double raiz { get; private set; }
     public RaizQuadrada(double raiz)
