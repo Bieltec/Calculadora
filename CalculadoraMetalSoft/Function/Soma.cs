@@ -1,4 +1,6 @@
-﻿internal sealed class Soma
+﻿using CalculadoraMetalSoft.Implementacao;
+
+internal sealed class Soma : ITotalOperacao
 {
     public List<double> ListSoma { get; private set; }
     public Soma(List<double> listSoma)
@@ -6,8 +8,7 @@
         ListSoma = listSoma;
     }
 
-
-    public double TotalSoma()
+    public double TotalOperacao()
     {
         double totalSoma = 0;
         foreach (var soma in ListSoma)
@@ -15,9 +16,8 @@
             totalSoma += soma;
         }
         return totalSoma;
-
     }
 
-    //bugs: permitir a soma de mais de um valor
+
 
 }

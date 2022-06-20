@@ -1,17 +1,17 @@
-﻿internal sealed class Divisao
+﻿using CalculadoraMetalSoft.Implementacao;
+
+internal sealed class Divisao : ITotalOperacao
 {
     public List<double> ListDivisao { get; private set; }
-
 
 	public Divisao(List<double> listDivisao)
 	{
 		ListDivisao = listDivisao;
 	}
 
-
 	// expressao que devo estar estudando para melhor aplicacao
-	public  double TotalDivisao()
-	{
+    public double TotalOperacao()
+    {
 		double aux = 0;
 		foreach (var item in ListDivisao)
 		{

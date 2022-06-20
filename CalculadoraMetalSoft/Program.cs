@@ -66,7 +66,7 @@ try
        
 
                 var a = new Soma(ValorOperacao);
-                Console.WriteLine($"O resultado da sua operação: {a.TotalSoma().ToString("N2")}");
+                Console.WriteLine($"O resultado da sua operação: {a.TotalOperacao().ToString("N2")}");
                 break;
             }
         case 2:
@@ -75,7 +75,7 @@ try
        
                 var subtracao = new Subtracao(ValorOperacao);
 
-                Console.WriteLine($"O resultado da sua operação: {subtracao.TotalSubtracao().ToString("N2")}");
+                Console.WriteLine($"O resultado da sua operação: {subtracao.TotalOperacao().ToString("N2")}");
 
                 break;
 
@@ -84,7 +84,7 @@ try
             {
        
                 var divisao = new Divisao(ValorOperacao);
-                Console.WriteLine($"O resultado da sua operação: {divisao.TotalDivisao().ToString("N2")}");
+                Console.WriteLine($"O resultado da sua operação: {divisao.TotalOperacao().ToString("N2")}");
                 break;
 
 
@@ -94,7 +94,7 @@ try
       
 
                 var multi = new Multiplicacao(ValorOperacao);
-                Console.WriteLine($"Resultado da operação: {multi.TotalMultiplicacao().ToString("N2")}");
+                Console.WriteLine($"Resultado da operação: {multi.TotalOperacao().ToString("N2")}");
                 break;
 
             }
@@ -120,7 +120,7 @@ try
                 }
 
                 var e = new Porcentagem(valor, valor2);
-                Console.WriteLine($"Valor da porcentagem de {valor}% de {valor2} é: " + e.TotalPorcentagem().ToString("N2"));
+                Console.WriteLine($"Valor da porcentagem de {valor}% de {valor2} é: " + e.TotalOperacao().ToString("N2"));
                 break;
 
             }
@@ -138,7 +138,7 @@ try
                 }
                 var f = new RaizQuadrada(valor);
 
-                Console.WriteLine("Valor da Raiz Quadrada é: " + f.ObterRaizQuadrada().ToString("N2"));
+                Console.WriteLine("Valor da Raiz Quadrada é: " + f.TotalOperacao().ToString("N2"));
 
                 break;
 
