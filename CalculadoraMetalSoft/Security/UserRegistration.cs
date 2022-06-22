@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CalculadoraMetalSoft.Security
 {
-    internal class CadastroUsuario
+    internal class UserRegistration
     {
         public string Name { get; private set; }
         public int Id { get; private set; }
-        public int Contato { get; private set; }
+        public int Contact { get; private set; }
         
 
 

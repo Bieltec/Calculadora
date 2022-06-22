@@ -3,7 +3,7 @@
 
 namespace CalculadoraMetalSoft
 {
-    internal class Calculadora
+    internal class Calculator
     {
         private List<double> ValueOperation = new List<double>();
         public int Position { get; set; }
@@ -69,7 +69,7 @@ namespace CalculadoraMetalSoft
 
                     do
                     {
-                        Console.WriteLine("Deseja continuar a operação, SIM(1) NÃO(2):");
+                        Console.WriteLine("Deseja continuar sum operação, SIM(1) NÃO(2):");
                         outWhile = int.Parse(Console.ReadLine());
 
                         if (outWhile == 1)
@@ -82,7 +82,7 @@ namespace CalculadoraMetalSoft
                 }
                 if (Position == 5)
                 {
-                    Console.WriteLine("Digite a porcentagem:");
+                    Console.WriteLine("Digite sum percentage:");
                     ValueA = double.Parse(Console.ReadLine());
                     if (ValueA > 0)
                     {
@@ -92,13 +92,13 @@ namespace CalculadoraMetalSoft
                     {
                         while (ValueA < 0)
                         {
-                            Console.WriteLine("Valor da porcentagem negativo, digite novamente:");
+                            Console.WriteLine("Valor da percentage negativo, digite novamente:");
                             ValueA = double.Parse(Console.ReadLine());
                         }
                         ValueOperation.Add(ValueA);
                     }
                     
-                    Console.WriteLine("Digite a percentagem:");
+                    Console.WriteLine("Digite sum percentagem:");
                     ValueB = double.Parse(Console.ReadLine());
                     if (ValueB > 0)
                     {
@@ -108,7 +108,7 @@ namespace CalculadoraMetalSoft
                     {
                         while (ValueB < 0)
                         {
-                            Console.WriteLine("Valor da porcentagem negativo, digite novamente:");
+                            Console.WriteLine("Valor da percentage negativo, digite novamente:");
                             ValueB = Int32.Parse(Console.ReadLine());
                         }
                         ValueOperation.Add(ValueB);
@@ -150,38 +150,38 @@ namespace CalculadoraMetalSoft
             {
                 case 1:
                     {
-                        var a = new Soma(ValueOperation);
-                        Console.WriteLine($"O resultado da sua operação: {a.CalcularOperacao().ToString("N2")}");
+                        var sum = new Sum(ValueOperation);
+                        Console.WriteLine($"O resultado da sua operação: {sum.CalculateOperation().ToString("N2")}");
                         break;
                     }
                 case 2:
                     {
-                        var subtracao = new Subtracao(ValueOperation);
-                        Console.WriteLine($"O resultado da sua operação: {subtracao.CalcularOperacao().ToString("N2")}");
+                        var subtraction = new Subtraction(ValueOperation);
+                        Console.WriteLine($"O resultado da sua operação: {subtraction.CalculateOperation().ToString("N2")}");
                         break;
                     }
                 case 3:
                     {
-                        var divisao = new Divisao(ValueOperation);
-                        Console.WriteLine($"O resultado da sua operação: {divisao.CalcularOperacao().ToString("N2")}");
+                        var division = new Division(ValueOperation);
+                        Console.WriteLine($"O resultado da sua operação: {division.CalculateOperation().ToString("N2")}");
                         break;
                     }
                 case 4:
                     {
-                        var multi = new Multiplicacao(ValueOperation);
-                        Console.WriteLine($"Resultado da operação: {multi.CalcularOperacao().ToString("N2")}");
+                        var multiplication = new Multiplication(ValueOperation);
+                        Console.WriteLine($"Resultado da operação: {multiplication.CalculateOperation().ToString("N2")}");
                         break;
                     }
                 case 5:
                     {
-                        var porcentagem = new Porcentagem(ValueOperation);
-                        Console.WriteLine($"Valor da porcentagem de {ValueA}% de {ValueB} é: " + porcentagem.CalcularOperacao().ToString("N2"));
+                        var percentage = new Percentage(ValueOperation);
+                        Console.WriteLine($"Valor da percentage de {ValueA}% de {ValueB} é: " + percentage.CalculateOperation().ToString("N2"));
                         break;
                     }
                 case 6:
                     {
-                        var raiz = new RaizQuadrada(ValueOperation);
-                        Console.WriteLine("Valor da Raiz Quadrada é: " + raiz.CalcularOperacao().ToString("N2"));
+                        var raiz = new SquareRoot(ValueOperation);
+                        Console.WriteLine("Valor da Raiz Quadrada é: " + raiz.CalculateOperation().ToString("N2"));
                         break;
                     }
                    
@@ -191,4 +191,4 @@ namespace CalculadoraMetalSoft
 
     }
 }
-//, System.Globalization.CultureInfo.GetCultureInfo("en-US")
+//, System.Globalization.CultureInfo.GetCultureInfo("en-US") PASSO ESTE METODO COMO SOBRECARGA NO PARSE CASO QUEIRA CONVERTER

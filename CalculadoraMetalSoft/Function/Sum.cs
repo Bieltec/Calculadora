@@ -1,14 +1,14 @@
-﻿using CalculadoraMetalSoft.Implementacao;
+﻿using CalculadoraMetalSoft.Implementation;
 
-internal sealed class Soma : ICalculoOperacao
+internal sealed class Sum : ICalculationOperation
 {
     public List<double> ListSoma { get; private set; }
-    public Soma(List<double> listSoma)
+    public Sum(List<double> listSoma)
     {
         ListSoma = listSoma;
     }
 
-    public double CalcularOperacao()
+    public double CalculateOperation()
     {
         double totalSoma = 0;
         foreach (var soma in ListSoma)

@@ -1,16 +1,16 @@
-﻿using CalculadoraMetalSoft.Implementacao;
+﻿using CalculadoraMetalSoft.Implementation;
 
-internal sealed class Divisao : ICalculoOperacao
+internal sealed class Division : ICalculationOperation
 {
     public List<double> ListDivisao { get; private set; }
 
-	public Divisao(List<double> listDivisao)
+	public Division(List<double> listDivisao)
 	{
 		ListDivisao = listDivisao;
 	}
 
 	// expressao que devo estar estudando para melhor aplicacao
-    public double CalcularOperacao()
+    public double CalculateOperation()
     {
 		double aux = 0;
 		foreach (var item in ListDivisao)

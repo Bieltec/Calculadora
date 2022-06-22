@@ -1,16 +1,16 @@
-﻿using CalculadoraMetalSoft.Implementacao;
+﻿using CalculadoraMetalSoft.Implementation;
 
-sealed class Multiplicacao : ICalculoOperacao
+sealed class Multiplication : ICalculationOperation
 {
    public List<double> ListMulti { get; private set; }
 
-   public Multiplicacao(List<double> listMulti)
+   public Multiplication(List<double> listMulti)
     {
 
         ListMulti = listMulti;
     }
 
-    public double CalcularOperacao()
+    public double CalculateOperation()
     {
         double totalMulti = 1;
         foreach (var somaMulti in ListMulti)

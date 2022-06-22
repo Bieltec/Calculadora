@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculadoraMetalSoft.Implementacao
+namespace CalculadoraMetalSoft.Implementation
 {
-    internal interface ICalculoOperacao
+    internal interface ICalculationOperation
     {
-        double CalcularOperacao();
+        double CalculateOperation();
     }
 }

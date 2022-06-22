@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculadoraMetalSoft.Implementacao
+namespace CalculadoraMetalSoft
 {
-    internal interface IRetornoResultado
+    // classe para aplicação de testes, antes de ir para outras classes.
+    public class Test
     {
-        void RetornoResultado(Object a);    
+
     }
 }

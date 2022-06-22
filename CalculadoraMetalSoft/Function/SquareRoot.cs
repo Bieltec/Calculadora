@@ -1,13 +1,13 @@
-﻿using CalculadoraMetalSoft.Implementacao;
+﻿using CalculadoraMetalSoft.Implementation;
 
-internal sealed class RaizQuadrada : ICalculoOperacao
+internal sealed class SquareRoot : ICalculationOperation
 {
     public List<double> Raiz { get; private set; }
-    public RaizQuadrada(List<double> raiz)
+    public SquareRoot(List<double> raiz)
     {
         Raiz = raiz;
-    }
-    public double CalcularOperacao()
+    }                                                       
+    public double CalculateOperation()
     {
         double auxiliar = 0;    
         foreach (var raiz in Raiz)

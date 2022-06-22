@@ -1,15 +1,17 @@
-﻿using CalculadoraMetalSoft.Implementacao;
+﻿
 
-internal sealed class Porcentagem : ICalculoOperacao
+using CalculadoraMetalSoft.Implementation;
+
+internal sealed class Percentage : ICalculationOperation
 {
     public List<double> Value { get; private set; }
 
-    public Porcentagem(List<double> value)
+    public Percentage(List<double> value)
     {    
         Value = value;
     }
 
-    public double CalcularOperacao()
+    public double CalculateOperation()
     {
         double auxiliar = 0;
         foreach (var value in Value)

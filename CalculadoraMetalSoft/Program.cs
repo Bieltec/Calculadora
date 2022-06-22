@@ -11,7 +11,7 @@ using CalculadoraMetalSoft.Function;
 Console.WriteLine("Calculadora MetalSoft. Seja Bem Vindo!");
 Console.WriteLine("Segue as soluções:");
 
-var calculadora = new Calculadora();
+var calculadora = new Calculator();
 calculadora.ListFunction();
 calculadora.PositionFunction();
 calculadora.ReceiveFunctionValues();

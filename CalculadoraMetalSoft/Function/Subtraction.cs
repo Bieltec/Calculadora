@@ -1,4 +1,4 @@
-﻿using CalculadoraMetalSoft.Implementacao;
+﻿using CalculadoraMetalSoft.Implementation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace CalculadoraMetalSoft.Function
 {
-    internal sealed class Subtracao : ICalculoOperacao
+    internal sealed class Subtraction : ICalculationOperation
     {
         public List<double> ListSubtracao { get; private set; }
 
-        public Subtracao(List<double> listSubtracao)
+        public Subtraction(List<double> listSubtracao)
         {
             ListSubtracao = listSubtracao;
         }
 
-        public double CalcularOperacao()
+        public double CalculateOperation()
         {
             double auxiliar = 0;
             foreach (var subtracao in ListSubtracao)
