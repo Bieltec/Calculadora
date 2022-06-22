@@ -1,15 +1,23 @@
 ﻿using CalculadoraMetalSoft.Implementacao;
 
-internal sealed class RaizQuadrada : ITotalOperacao
+internal sealed class RaizQuadrada : ICalculoOperacao
 {
-    public double raiz { get; private set; }
-    public RaizQuadrada(double raiz)
+    public List<double> Raiz { get; private set; }
+    public RaizQuadrada(List<double> raiz)
     {
-        this.raiz = raiz;
+        Raiz = raiz;
     }
-    public double TotalOperacao()
+    public double CalcularOperacao()
     {
-        double resultado = Math.Sqrt(raiz);
-        return resultado;
+        double auxiliar = 0;    
+        foreach (var raiz in Raiz)
+        {
+            if (raiz > 0)
+            {
+                auxiliar = raiz;
+                auxiliar = Math.Sqrt(raiz);
+            }
+        }
+        return auxiliar;
     }
 }

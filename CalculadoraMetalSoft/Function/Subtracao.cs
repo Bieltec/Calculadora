@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculadoraMetalSoft.Funcao
+namespace CalculadoraMetalSoft.Function
 {
-    internal sealed class Subtracao : ITotalOperacao
+    internal sealed class Subtracao : ICalculoOperacao
     {
         public List<double> ListSubtracao { get; private set; }
 
@@ -16,7 +16,7 @@ namespace CalculadoraMetalSoft.Funcao
             ListSubtracao = listSubtracao;
         }
 
-        public double TotalOperacao()
+        public double CalcularOperacao()
         {
             double auxiliar = 0;
             foreach (var subtracao in ListSubtracao)

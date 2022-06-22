@@ -1,6 +1,6 @@
 ﻿using CalculadoraMetalSoft.Implementacao;
 
-internal sealed class Divisao : ITotalOperacao
+internal sealed class Divisao : ICalculoOperacao
 {
     public List<double> ListDivisao { get; private set; }
 
@@ -10,7 +10,7 @@ internal sealed class Divisao : ITotalOperacao
 	}
 
 	// expressao que devo estar estudando para melhor aplicacao
-    public double TotalOperacao()
+    public double CalcularOperacao()
     {
 		double aux = 0;
 		foreach (var item in ListDivisao)

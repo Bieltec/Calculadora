@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace CalculadoraMetalSoft.Implementacao
 {
-    internal interface ITotalOperacao
+    internal interface ICalculoOperacao
     {
-
-        double TotalOperacao();
+        double CalcularOperacao();
     }
 }

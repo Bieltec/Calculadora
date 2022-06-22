@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculadoraMetalSoft
+namespace CalculadoraMetalSoft.Implementacao
 {
-    // classe para aplicação de testes, antes de ir para outras classes.
-    public class teste
+    internal interface Interface1
     {
-
     }
 }

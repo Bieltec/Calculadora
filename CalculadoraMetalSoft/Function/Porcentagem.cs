@@ -1,19 +1,24 @@
 ﻿using CalculadoraMetalSoft.Implementacao;
 
-internal sealed class Porcentagem : ITotalOperacao
+internal sealed class Porcentagem : ICalculoOperacao
 {
-    public double valorA { get; private set; }
-    public double valorB { get; private set; }
+    public List<double> Value { get; private set; }
 
-    public Porcentagem(double a, double b)
-    {
-        valorA = a;
-        valorB = b;
+    public Porcentagem(List<double> value)
+    {    
+        Value = value;
     }
 
-    public double TotalOperacao()
+    public double CalcularOperacao()
     {
-        double total = (valorA * valorB) / 100;
-        return total;
+        double auxiliar = 0;
+        foreach (var value in Value)
+        {
+            if (value > 0)
+            {
+                auxiliar = auxiliar == 0 ? value : (value * auxiliar) /100;
+            }
+        }
+        return auxiliar;
     }
 }
