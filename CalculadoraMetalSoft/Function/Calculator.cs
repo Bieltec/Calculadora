@@ -1,14 +1,17 @@
 ﻿using CalculadoraMetalSoft.Function;
-
+using CalculadoraMetalSoft.Implementation;
 
 namespace CalculadoraMetalSoft
 {
-    internal class Calculator
+    internal class Calculator : IWriteResult
     {
         private List<double> ValueOperation = new List<double>();
         public int Position { get; set; }
         public double ValueA { get; set; }
         public double ValueB { get; private set; }
+        public double ValueC { get; private set; }
+
+
 
         List<string> function = new List<string>()
         {
@@ -151,42 +154,59 @@ namespace CalculadoraMetalSoft
                 case 1:
                     {
                         var sum = new Sum(ValueOperation);
-                        Console.WriteLine($"O resultado da sua operação: {sum.CalculateOperation().ToString("N2")}");
+                        ValueC = sum.CalculateOperation();
+                        WriteResultFunction();
                         break;
+                    
+                   
                     }
                 case 2:
                     {
                         var subtraction = new Subtraction(ValueOperation);
-                        Console.WriteLine($"O resultado da sua operação: {subtraction.CalculateOperation().ToString("N2")}");
+                        ValueC = subtraction.CalculateOperation();
+                        WriteResultFunction();
+                        
                         break;
                     }
                 case 3:
                     {
                         var division = new Division(ValueOperation);
-                        Console.WriteLine($"O resultado da sua operação: {division.CalculateOperation().ToString("N2")}");
+                        ValueC = division.CalculateOperation();
+                        WriteResultFunction();
                         break;
                     }
                 case 4:
                     {
                         var multiplication = new Multiplication(ValueOperation);
-                        Console.WriteLine($"Resultado da operação: {multiplication.CalculateOperation().ToString("N2")}");
+                        ValueC = multiplication.CalculateOperation();
+                        WriteResultFunction();
                         break;
                     }
                 case 5:
                     {
                         var percentage = new Percentage(ValueOperation);
-                        Console.WriteLine($"Valor da percentage de {ValueA}% de {ValueB} é: " + percentage.CalculateOperation().ToString("N2"));
+                        ValueC = percentage.CalculateOperation();
+                        WriteResultFunctionPorcentagem();
                         break;
                     }
                 case 6:
                     {
                         var raiz = new SquareRoot(ValueOperation);
-                        Console.WriteLine("Valor da Raiz Quadrada é: " + raiz.CalculateOperation().ToString("N2"));
+                        ValueC = raiz.CalculateOperation();
+                        WriteResultFunction();
                         break;
                     }
                    
             }
 
+        } 
+        public void WriteResultFunction()
+        {
+             Console.WriteLine($"Resultado da operação: {ValueC:N2}");
+        }
+        public void WriteResultFunctionPorcentagem()
+        {
+            Console.WriteLine($"Valor da porcentagem de {ValueA}% de {ValueB} é: {ValueC:N2}");
         }
 
     }

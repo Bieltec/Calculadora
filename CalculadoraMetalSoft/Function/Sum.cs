@@ -3,6 +3,7 @@
 internal sealed class Sum : ICalculationOperation
 {
     public List<double> ListSoma { get; private set; }
+ 
     public Sum(List<double> listSoma)
     {
         ListSoma = listSoma;
@@ -17,7 +18,6 @@ internal sealed class Sum : ICalculationOperation
         }
         return totalSoma;
     }
-
 
 
 }
