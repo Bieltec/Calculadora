@@ -1,51 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Division">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+  <Class Name="Division" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Function\Division.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Multiplication">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+  <Class Name="Multiplication" Collapsed="true">
+    <Position X="7.5" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Function\Multiplication.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Percentage">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Class Name="Percentage" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Function\Percentage.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="SquareRoot">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+  <Class Name="SquareRoot" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Function\SquareRoot.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Sum">
-    <Position X="2.25" Y="2.5" Width="1.5" />
+  <Class Name="Sum" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Function\Sum.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CalculadoraMetalSoft.Calculator">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="CalculadoraMetalSoft.Calculator" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAgAAAAAgAkAAAAAEACAAAAABAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAABACAAgAAACAgAkAAAAAEACAAAAABAAAgAAAAAAA=</HashCode>
       <FileName>Function\Calculator.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="CalculadoraMetalSoft.Implementation.IWriteResult" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\IWriteResult.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CalculadoraMetalSoft.Implementation.ICalculationOperation" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Implementation\ICalculationOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
