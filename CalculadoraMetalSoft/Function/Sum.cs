@@ -1,4 +1,4 @@
-﻿using CalculadoraMetalSoft.Implementation;
+﻿using Calculadora.Implementation;
 
 internal sealed class Sum : ICalculationOperation
 {

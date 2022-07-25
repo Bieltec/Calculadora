@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Function\NovaPasta\" />
+    <Compile Remove="Function\NovaPasta\**" />
+    <EmbeddedResource Remove="Function\NovaPasta\**" />
+    <None Remove="Function\NovaPasta\**" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculadoraMetalSoft.Excessao
+namespace Calculadora.Excessao
 
     // estudar a criação da classe exception e aprofundar
 {

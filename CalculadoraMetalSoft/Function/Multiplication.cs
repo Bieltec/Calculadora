@@ -1,4 +1,4 @@
-﻿using CalculadoraMetalSoft.Implementation;
+﻿using Calculadora.Implementation;
 
 sealed class Multiplication : ICalculationOperation
 {

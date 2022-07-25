@@ -1,6 +1,6 @@
 ﻿
 
-using CalculadoraMetalSoft.Implementation;
+using Calculadora.Implementation;
 
 internal sealed class Percentage : ICalculationOperation
 {

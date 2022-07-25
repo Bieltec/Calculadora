@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\source\\repos\\CalculadoraMetalSoft\\CalculadoraMetalSoft\\CalculadoraMetalSoft.csproj",
-      "projectName": "CalculadoraMetalSoft",
-      "projectPath": "C:\\Users\\Gabriel\\source\\repos\\CalculadoraMetalSoft\\CalculadoraMetalSoft\\CalculadoraMetalSoft.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel\\source\\repos\\CalculadoraMetalSoft\\CalculadoraMetalSoft\\Calculadora.csproj",
+      "projectName": "Calculadora",
+      "projectPath": "C:\\Users\\Gabriel\\source\\repos\\CalculadoraMetalSoft\\CalculadoraMetalSoft\\Calculadora.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Gabriel\\source\\repos\\CalculadoraMetalSoft\\CalculadoraMetalSoft\\obj\\",
       "projectStyle": "PackageReference",
